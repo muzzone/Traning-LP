@@ -1,14 +1,14 @@
 @font-face{
 	font-family:Regular;
-	src: url(fonts/OpenSans-Regular.ttf);
+	src: url(../fonts/OpenSans-Regular.ttf);
 }
 @font-face{
 	font-family:Semibold;
-	src: url(fonts/OpenSans-Semibold.ttf);
+	src: url(../fonts/OpenSans-Semibold.ttf);
 }
 @font-face{
 	font-family:Bold;
-	src: url(fonts/OpenSans-Bold.ttf);
+	src: url(../fonts/OpenSans-Bold.ttf);
 }
 a, a:visited, a:focus, a:active, a:hover {
   outline:0 none !important; 
@@ -24,13 +24,13 @@ ul{
 	list-style: none;
 	padding: 0;
 }
-h1{
+h2{
 	text-transform: uppercase;
 	font-size: 26px;
 	font-family: Bold;
 	color: #1a1a1a;
 }
-h2{
+h3{
 	color:#1a1a1a;
 }
 
@@ -61,9 +61,9 @@ header{
 		display: flex;
 		justify-content: space-around;
 		color: #373737;
-		height: 615px;
+		min-height: 615px;
 		width: 100%;
-		background-image: url('img/header.png');
+		background-image: url(../img/header.png);
 		.questions{
 			text-transform: uppercase;
 			font-family:Regular;
@@ -79,4 +79,20 @@ main{
 	.facts{
 		color: #1a1a1a;
 	}
+	////facts end////
+	.watch{
+		background-image: url(../img/fon1.png);
+		min-height: 496px;
+		width: 100%;
+		h2{
+			color: #fff;
+		}
+	}
+}
+
+footer{	
+ .buy{
+ 	background-image: url(../img/footer1.png);
+ 	min-height: 440px;
+ }
 }
