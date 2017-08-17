@@ -20,6 +20,9 @@ button:visited, button:focus, button:active, button:hover {
   outline:0 none !important;
   cursor: pointer;
 }
+button{
+	display: block;
+}
 ul{
 	list-style: none;
 	padding: 0;
@@ -29,9 +32,12 @@ h2{
 	font-size: 26px;
 	font-family: Bold;
 	color: #1a1a1a;
+	text-align: center;
+	margin:40px 0;
 }
 h3{
 	color:#1a1a1a;
+	margin: 0;
 }
 
 
@@ -59,7 +65,8 @@ header{
 	/////nav end/////
 	.main{
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		align-items: center;
 		color: #373737;
 		min-height: 615px;
 		width: 100%;
@@ -68,6 +75,43 @@ header{
 			text-transform: uppercase;
 			font-family:Regular;
 			font-size: 20px;
+			margin-right: 60px;
+		}
+		.contactForm1{
+			margin-left: 60px;
+			height: 355px;
+			width: 310px;
+			text-align: center;
+			background: rgba(255,255,255,0.5);
+			border-radius: 3px;
+			h4{
+				font-family: Bold;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #373737;
+				padding:0 10px;
+				margin: 10px 0;
+			}
+			input, button{
+				width: 260px;
+				height: 45px;
+				margin:10px 0;
+				font-family: Regular;
+				border: none;
+				border-radius: 2px;
+				font-size: 20px;
+			}
+			input{
+				color: #8d8d8d;
+				background: #f3f3f3;
+    			padding-left: 10px; 
+			}
+			button{
+				background: #73b183;
+				color: #fff;
+				margin: 10px auto;
+				width: 270px;
+			}
 		}
 
 	}
@@ -78,14 +122,78 @@ header{
 main{
 	.facts{
 		color: #1a1a1a;
+		p{
+			margin-top: 5px;
+		}
+		ul{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+			max-width: 1170px;
+			margin: auto;
+			li{
+				width: 500px;
+				margin-bottom: 40px;
+				img{
+					float: left;
+					margin-right: 35px;
+				}
+			}
+		}
 	}
 	////facts end////
 	.watch{
 		background-image: url(../img/fon1.png);
-		min-height: 496px;
+		min-height: 495px;
 		width: 100%;
+		padding-top: 1px;
 		h2{
 			color: #fff;
+		}
+		.movie{
+			display: flex;
+			max-width: 1170px;
+			margin: auto;
+			justify-content: space-around;
+			div{
+				position:relative;
+				height:360px;
+				width: 480px;
+			}
+		}
+	}
+	/////watch end/////
+	.news{
+		ul{
+			li{
+				border-bottom: 1px solid #bababa;
+				min-height: 190px;
+			}
+			max-width: 1170px;
+			margin: auto;
+			h3{
+				text-transform: uppercase;
+				margin: 10px 0;
+			}
+			img{
+				float: left;
+				margin-right: 30px;
+			}
+			p{
+				margin: 0;
+			}
+			button{
+				background: #fff;
+				color: #000;
+				border-radius: 3px;
+				border: 1px solid #767676;
+				font-family: Bold;
+				font-size: 16px;
+				float: right;
+				margin-right: 20px;
+				margin-top: 20px;
+			}
 		}
 	}
 }
@@ -95,4 +203,19 @@ footer{
  	background-image: url(../img/footer1.png);
  	min-height: 440px;
  }
+}
+#owl-demo .item{
+  margin:0 20px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-demo{
+	margin: auto;
+    max-width: 1200px;
+}
+.owl-wrapper{
+	align-items: center;
 }
