@@ -196,14 +196,127 @@ main{
 			}
 		}
 	}
+	////new end////
 }
+////main end////
 
 footer{	
  .buy{
  	background-image: url(../img/footer1.png);
+ 	background-repeat: no-repeat;
  	min-height: 440px;
+ 	display: flex;
+ 	justify-content: center;
+ 	position: relative;
+    top: 13px;
+ 	.disk{
+ 		img{
+ 			position: relative;
+    		top: -38px;
+ 		}
+ 	}
+ 	.contactForm2{
+ 		max-width: 470px;
+ 		margin-left: 80px;
+ 		h2{
+ 			color: #fff;
+ 			margin-bottom: 0;
+ 			text-align: start;
+ 		}
+ 		p{
+ 			color: #e5e5e5;
+ 		}
+ 		input{
+ 			width: 47%;
+ 			height: 40px;
+ 			border-radius: 2px;
+ 			background: #375377;
+ 			color: #e5e5e5;
+ 			padding-left: 10px;
+ 			font-family: Regular;
+ 			border: none;
+ 		}
+ 		.first{
+ 			margin-right: 3px;
+ 		}
+ 		button{
+ 			margin-top: 30px;
+ 			width: 260px;
+			height: 45px;
+			margin:10px 0;
+			font-family: Regular;
+			border: none;
+			border-radius: 2px;
+			font-size: 20px;
+			background: #73b183;
+			color: #fff;
+			margin: 10px auto;
+			width: 270px;
+ 		}
+ 	}
+ 	//////contactForm2 end///////
+
  }
+ //////buy end////////
+ .footer{
+ 	padding-top: 20px;
+ 	background-image: url(../img/footer2.png);
+ 	.nav2{
+		height: 45px;
+		width: 100%;
+		font-family: Semibold;
+		font-size: 16px;
+		text-align: center;
+		ul{
+			margin: auto;
+			display: flex;
+			width: 770px;
+			justify-content: space-around;
+			text-transform: uppercase;
+			height: 45px;
+			align-items: center;
+			a{
+				color: #fff;
+			}
+		}
+	}
+	////nav2 end////
+	.tel{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 30px;
+		div{
+			width: 100%;
+			text-align: center;
+			p{
+				color: #fff;
+				font-size: 14px;
+				font-family: Regular;
+				margin-top: 0;
+				display: inline-block;
+			}
+			img{
+				display: inline-block;
+				position: relative;
+				right: 5px;
+			}
+		}
+		.tel1, .tel2{
+			img{
+				top: 3px;
+			}
+		}
+		.mail{
+			img{
+				top: 1px;
+			}
+		}
+	}
+ }
+
 }
+/////slider//////
 #owl-demo .item{
   margin:0 20px;
 }
@@ -219,3 +332,4 @@ footer{
 .owl-wrapper{
 	align-items: center;
 }
+/////slider//////
