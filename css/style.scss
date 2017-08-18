@@ -61,9 +61,14 @@ header{
 				color: #fff;
 			}
 		}
+	@media screen and (max-width: 780px){
+		ul{display: none;}
 	}
+	}
+
 	/////nav end/////
 	.main{
+		padding: 0 10px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -71,6 +76,7 @@ header{
 		min-height: 615px;
 		width: 100%;
 		background-image: url(../img/header.png);
+		background-position: center;
 		.questions{
 			text-transform: uppercase;
 			font-family:Regular;
@@ -81,6 +87,7 @@ header{
 			margin-left: 60px;
 			height: 355px;
 			width: 310px;
+			min-width: 310px;
 			text-align: center;
 			background: rgba(255,255,255,0.5);
 			border-radius: 3px;
@@ -113,7 +120,19 @@ header{
 				width: 270px;
 			}
 		}
-
+	@media screen and (max-width: 860px){
+		.contactForm1{
+			margin-left: 0;
+		}
+		.questions{
+			margin-right: 20px;
+		}
+	}
+	@media screen and (max-width: 766px){
+		background-position: left;
+		background-repeat: no-repeat;
+		flex-wrap: wrap;
+	}
 	}
 	/////main end/////
 }
@@ -153,6 +172,7 @@ main{
 		}
 		.movie{
 			display: flex;
+			flex-wrap: wrap;
 			max-width: 1170px;
 			margin: auto;
 			justify-content: space-around;
@@ -169,6 +189,11 @@ main{
 			li{
 				border-bottom: 1px solid #bababa;
 				min-height: 190px;
+				div{
+					padding-right: 20px;
+					display: flex;
+					flex-direction: column;
+				}
 			}
 			max-width: 1170px;
 			margin: auto;
@@ -190,11 +215,26 @@ main{
 				border: 1px solid #767676;
 				font-family: Bold;
 				font-size: 16px;
-				float: right;
-				margin-right: 20px;
-				margin-top: 20px;
+				margin: 20px;
+				align-self: flex-end;
 			}
 		}
+	@media screen and (max-width: 766px){
+		ul{
+			img{
+				float: none;
+				margin: 0;
+			}
+		}
+		
+		li{
+			text-align: center;
+			padding-top: 20px;
+		}
+		div{
+			padding: 20px;
+		}
+	}
 	}
 	////new end////
 }
@@ -217,6 +257,7 @@ footer{
  	}
  	.contactForm2{
  		max-width: 470px;
+ 		min-width: 470px;
  		margin-left: 80px;
  		h2{
  			color: #fff;
@@ -255,7 +296,18 @@ footer{
  		}
  	}
  	//////contactForm2 end///////
-
+ @media screen and (max-width: 950px){
+ 	.disk{
+ 		display: none;
+ 	}
+ 	.contactForm2{
+ 		text-align: center;
+ 		margin-left: 0;
+ 		h2{
+ 			text-align: center;
+ 		}
+ 	}
+ }
  }
  //////buy end////////
  .footer{
@@ -270,7 +322,7 @@ footer{
 		ul{
 			margin: auto;
 			display: flex;
-			width: 770px;
+			max-width: 770px;
 			justify-content: space-around;
 			text-transform: uppercase;
 			height: 45px;
