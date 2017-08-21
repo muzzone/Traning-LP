@@ -74,7 +74,7 @@ header{
 		align-items: center;
 		color: #373737;
 		min-height: 615px;
-		width: 100%;
+		width: calc(100% - 20px);
 		background-image: url(../img/header.png);
 		background-position: center;
 		.questions{
@@ -82,6 +82,13 @@ header{
 			font-family:Regular;
 			font-size: 20px;
 			margin-right: 60px;
+			li{
+				display: flex;
+				span:first-child{
+					margin-right: 3px;
+				}
+			}
+
 		}
 		.contactForm1{
 			margin-left: 60px;
@@ -125,13 +132,27 @@ header{
 			margin-left: 0;
 		}
 		.questions{
-			margin-right: 20px;
+			margin-right: 0;
 		}
 	}
 	@media screen and (max-width: 766px){
 		background-position: left;
 		background-repeat: no-repeat;
+		background-size: cover;
 		flex-wrap: wrap;
+		padding-bottom: 40px;
+		.questions{
+			li{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	@media screen and (max-width: 425px){
+		.questions{
+			li{
+				font-size: 16px;
+			}
+		}
 	}
 	}
 	/////main end/////
@@ -160,6 +181,18 @@ main{
 				}
 			}
 		}
+	@media screen and (max-width: 490px){
+		padding: 0 20px;
+		ul{
+			li{
+				text-align: center;
+				img{
+					float: none;
+					margin-right: 0;
+				}
+			}
+		}
+	}
 	}
 	////facts end////
 	.watch{
@@ -180,6 +213,32 @@ main{
 				position:relative;
 				height:360px;
 				width: 480px;
+			}
+		}
+		.movie2{
+			display: none;
+			text-align: center;
+			div{
+				padding-bottom: 40px;
+			}
+		}
+		@media screen and (max-width: 960px){
+			background-image: url(../img/watchfon.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			.movie{
+				div{
+					margin-bottom: 40px;
+				}
+			}
+;
+		}
+		@media screen and (max-width: 490px){
+			.movie{
+				display: none;
+			}
+			.movie2{
+				display: block;
 			}
 		}
 	}
@@ -230,10 +289,21 @@ main{
 		li{
 			text-align: center;
 			padding-top: 20px;
+			p{
+				text-align: start;
+			}
 		}
 		div{
 			padding: 20px;
 		}
+	}
+	@media screen and (max-width: 430px){
+		ul{
+			button{
+				align-self: center;
+			}
+		}
+		
 	}
 	}
 	////new end////
@@ -306,6 +376,24 @@ footer{
  		h2{
  			text-align: center;
  		}
+ 		p {
+ 			text-align: start;
+ 		}
+ 	}
+ }
+ @media screen and (max-width: 490px){
+ 	background-size: cover;
+ 	padding-bottom: 20px;
+ 	.contactForm2{
+ 		min-width: 300px;
+ 		padding: 0 10px;
+ 		input{
+ 			margin: 10px 0;
+ 			width: 90%;
+ 		}
+ 		.first{
+ 			margin-right: 0;
+ 		}
  	}
  }
  }
@@ -331,6 +419,9 @@ footer{
 				color: #fff;
 			}
 		}
+	@media screen and (max-width: 490px){
+		display: none;
+	}	
 	}
 	////nav2 end////
 	.tel{
